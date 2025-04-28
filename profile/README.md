@@ -45,14 +45,14 @@ Extends MCP to include UI-specific context:
 ---
 
 ## **Example Workflow**  
-1. LLM generates UI schema via MURP  
+1. LLM generates UI schema via MUP  
 2. Client renders components using local toolkit  
 3. User interaction triggers MCP context updates  
 4. Model receives updates and regenerates UI  
 
 ```mermaid
 graph LR
-    LLM -->|MURP Schema| Client
+    LLM -->|MUP Schema| Client
     Client -->|MCP Events| MCP
     MCP -->|Context Update| LLM
 ```
