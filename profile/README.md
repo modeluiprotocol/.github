@@ -20,26 +20,14 @@ The **Model UI Protocol (MUP)** is an open standard that enables seamless UI int
 JSON-based definition for UI elements (inspired by React/Vue but tool-agnostic):  
 ```json
 {
-  "type": "interactive/static",
-  "component": "input|button|chart|...",
-  "properties": {...},
-  "dataBindings": {
-    "model": "context_key",
-    "events": ["onChange", "onSubmit"]
-  }
+  // TODO
 }
 ```
 
 ### 2. **Render Context Protocol**  
 Extends MCP to include UI-specific context:  
 ```yaml
-context:
-  - type: ui_state
-    id: user_form
-    components: [...]
-  - type: data_source  
-    id: api_response
-    binding: $.components[0].data
+# TODO
 ```
 
 ### 3. **Dynamic Update Mechanism**  
